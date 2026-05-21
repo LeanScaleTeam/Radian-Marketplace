@@ -1,0 +1,16 @@
+{
+  "name": "radian-customer-success",
+  "version": "0.1.0",
+  "description": "Customer success across onboarding, ongoing delivery, support, and health — kickoff, time-to-value, activation, status visibility, feature adoption, scope management, churn risk, health score, reporting.",
+  "author": "Chiraag Kapoor (Radian Capital)",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/verify-connectors.sh" }
+        ]
+      }
+    ]
+  }
+}

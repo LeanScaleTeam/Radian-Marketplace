@@ -1,0 +1,22 @@
+{
+  "name": "radian-outbound",
+  "version": "0.1.0",
+  "description": "Outbound sales motion — target account list building, personalized outreach, multi-channel cadence, email deliverability, reply intent detection.",
+  "author": "Chiraag Kapoor (Radian Capital)",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/verify-connectors.sh" }
+        ]
+      },
+      {
+        "matcher": ".*",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/draft-not-send.sh" }
+        ]
+      }
+    ]
+  }
+}

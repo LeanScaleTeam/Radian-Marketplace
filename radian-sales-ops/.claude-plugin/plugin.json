@@ -1,0 +1,16 @@
+{
+  "name": "radian-sales-ops",
+  "version": "0.1.0",
+  "description": "Sales operations — forecasting, territory design, quotas, comp, sales reporting, sales→product/marketing feedback, win/loss analysis, ABS, qualification adherence, coaching at scale, call review.",
+  "author": "Chiraag Kapoor (Radian Capital)",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/verify-connectors.sh" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "radian-marketing-ops",
+  "version": "0.1.0",
+  "description": "Cross-channel marketing operations — lead scoring, routing, attribution, real-time enrichment, behavioral triggers, cold-lead re-engagement, lead gen and nurture reporting.",
+  "author": "Chiraag Kapoor (Radian Capital)",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/verify-connectors.sh" }
+        ]
+      }
+    ]
+  }
+}

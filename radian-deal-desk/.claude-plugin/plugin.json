@@ -1,0 +1,24 @@
+{
+  "name": "radian-deal-desk",
+  "version": "0.1.0",
+  "description": "Deal desk automation for portfolio companies — approval checks, contract structuring, and rep coaching on payment/billing/discount levers.",
+  "author": "Chiraag Kapoor (Radian Capital)",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/verify-connectors.sh" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Skill|Task",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/approval-audit-log.sh" }
+        ]
+      }
+    ]
+  }
+}

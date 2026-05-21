@@ -1,0 +1,22 @@
+{
+  "name": "radian-sdr",
+  "version": "0.1.0",
+  "description": "Inbound SDR workflows — lead enrichment, personalized outreach, triage, and meeting follow-up scheduling.",
+  "author": "Chiraag Kapoor (Radian Capital)",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/verify-connectors.sh" }
+        ]
+      },
+      {
+        "matcher": ".*",
+        "hooks": [
+          { "type": "command", "command": "${CLAUDE_PLUGIN_ROOT}/hooks/draft-not-send.sh" }
+        ]
+      }
+    ]
+  }
+}
