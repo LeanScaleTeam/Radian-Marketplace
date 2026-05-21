@@ -2,7 +2,7 @@
   "name": "radian-deal-desk",
   "version": "0.1.0",
   "description": "Deal desk automation for portfolio companies — approval checks, contract structuring, and rep coaching on payment/billing/discount levers.",
-  "author": "Chiraag Kapoor (Radian Capital)",
+  "author": "Chiraag Kapoor (Principal, Radian Capital)",
   "hooks": {
     "PreToolUse": [
       {

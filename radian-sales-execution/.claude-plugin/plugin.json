@@ -2,7 +2,7 @@
   "name": "radian-sales-execution",
   "version": "0.1.0",
   "description": "Mid-funnel sales execution — SDR/AE handoff, pre-call prep, on-request enrichment, discovery coaching, objection handling, multi-threading, post-call and long-term followup, AE/CS handoff.",
-  "author": "Chiraag Kapoor (Radian Capital)",
+  "author": "Chiraag Kapoor (Principal, Radian Capital)",
   "hooks": {
     "PreToolUse": [
       {

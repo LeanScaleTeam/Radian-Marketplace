@@ -98,7 +98,7 @@ Install once. Get updates centrally. Replace the busywork the rev org used to do
 
 ```bash
 # 1. One-time: register the marketplace
-/plugin marketplace add radiancapital/Radian-Marketplace
+/plugin marketplace add LeanScaleTeam/Radian-Marketplace
 
 # 2. Install whichever plugins are relevant to your team
 /plugin install radian-marketing-ops@radian-marketplace
@@ -124,7 +124,7 @@ The funnel goes top-to-bottom. The supporting plugins on the side (`crm-hygiene`
 
 ### 1) 🧭 `radian-business-fundamentals` — strategic, advisory layer above the funnel
 
-Sold to founders / CEOs. Higher-touch, higher-priced, lower volume. These are prerequisites — if positioning or ICP is broken, funnel SKUs won't compound on top of weak foundations.
+Sold to founders / CEOs. Higher-touch, higher-priced, lower volume. These are prerequisites — if positioning or ICP is broken, the funnel plugins won't compound on top of weak foundations.
 
 **Skills (7):** positioning audit · ICP/market selection (strategic) · product strategy audit · narrative builder · pricing/packaging audit · GTM org design · growth model builder
 
@@ -345,7 +345,7 @@ You don't have to install all 12 — most portcos start with 2-4 and grow into m
 
 ## Tags
 
-Per the source taxonomy, every SKU is tagged either `[[revenue driver]]` (provable short-payback revenue impact — sells well outcome-based) or `[[operational]]` (improves operations/efficiency/quality — sells as productized fixed-fee).
+Every skill is tagged either **revenue driver** (provable short-payback revenue impact — sells well outcome-based) or **operational** (improves operations/efficiency/quality — sells as productized fixed-fee).
 
 The matrix in each plugin README shows the tag for every skill.
 
@@ -371,23 +371,35 @@ The marketplace ships three kinds of hooks across plugins:
 2. **`draft-not-send`** (in `radian-outbound` + `radian-sdr`) — hard-blocks tool calls that would actually send emails or create calendar invites in v1. The skill instruction "draft only" can be ignored by the model under pressure; the hook can't.
 3. **`approval-audit-log`** (in `radian-deal-desk`) — PostToolUse writes every approval decision + reasoning to durable JSONL audit trail. Compliance + future training data.
 
+### Hook state in v0.1
+
+The `verify-connectors.sh` hook ships in every plugin but is intentionally a **no-op** in v0.1 — it returns `continue` regardless of state. The real connector-status check logic lives behind a `TODO:` marker because the check is portco-specific: which MCP/auth pattern Salesforce, Slack, Gong, etc. expose differs per stack.
+
+When you install your first plugin at a real portco, fill in the connector check for THEIR stack — that's the highest-leverage hook upgrade, because it prevents the worst failure mode (skills running on missing data and silently hallucinating reports).
+
+The `draft-not-send.sh` and `approval-audit-log.sh` hooks ARE fully functional and active immediately.
+
 ### Cache model
 
 Plugins run from a **cache**, not the source folder. Edits to source don't propagate live — always `/plugin update` after changes. (This is the opposite of skills, which read live every session.)
 
 ---
 
-## Local dev workflow (for Chiraag)
+## Local dev workflow
 
 ```bash
-# Register this folder as a local marketplace
-/plugin marketplace add /Users/yasin/Documents/GitHub/Radian-Marketplace
+# Clone the repo locally
+git clone https://github.com/LeanScaleTeam/Radian-Marketplace.git
+cd Radian-Marketplace
+
+# Register the local folder as a marketplace
+/plugin marketplace add "$(pwd)"
 
 # Install a plugin to test
 /plugin install radian-deal-desk@radian-marketplace
 
 # Edit files in source...
-# Then refresh the cache
+# Then refresh the cache (plugins read from cache, not live source)
 /plugin update radian-deal-desk@radian-marketplace
 ```
 
@@ -398,7 +410,7 @@ When ready to share with a portco:
 git push origin main
 
 # Portco installs from GitHub
-/plugin marketplace add radiancapital/Radian-Marketplace
+/plugin marketplace add LeanScaleTeam/Radian-Marketplace
 /plugin install <plugin>@radian-marketplace
 ```
 
@@ -406,10 +418,10 @@ git push origin main
 
 ## Source
 
-This marketplace is built on a first-principles GTM problem catalog: `ULTIMATE GTM Problems.md` (the source-of-truth document for what's worth automating). Every skill maps to a SKU in that catalog — with the original problem statement, industry-validated data, and impacted metrics.
+This marketplace is built on a first-principles GTM problem catalog: `ULTIMATE GTM Problems.md` (the source-of-truth document for what's worth automating). Every skill maps to a problem in that catalog — with the original problem statement, industry-validated data, and impacted metrics.
 
 That document is the "why this skill exists" reference. This marketplace is the "how it runs in Claude Code."
 
 ---
 
-*Built by Chiraag Kapoor for Radian Capital portfolio companies. Open issues / suggest skills via PR.*
+*Built by Chiraag Kapoor (Principal, Radian Capital) for Radian portfolio companies. Open issues / suggest skills via PR.*

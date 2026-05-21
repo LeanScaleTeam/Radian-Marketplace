@@ -21,4 +21,4 @@ Plus `revops-analyst` subagent for business insight questions — gray-area judg
 
 ## Status
 
-v0.1 scaffold. Skills are stubs.
+v0.1 — skill workflows fully specified. Connector wiring (the `verify-connectors.sh` hook) is intentionally a no-op until a real portco's MCP setup defines what to check.

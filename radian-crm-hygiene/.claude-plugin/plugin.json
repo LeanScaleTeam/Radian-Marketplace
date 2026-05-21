@@ -2,7 +2,7 @@
   "name": "radian-crm-hygiene",
   "version": "0.1.0",
   "description": "Automated CRM hygiene — activity capture, stage accuracy, deduplication, enrichment backlog, account hierarchy mapping.",
-  "author": "Chiraag Kapoor (Radian Capital)",
+  "author": "Chiraag Kapoor (Principal, Radian Capital)",
   "hooks": {
     "PreToolUse": [
       {

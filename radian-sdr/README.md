@@ -26,4 +26,4 @@ Top-of-funnel hits the most connector immaturity (SEPs, email tools, calendars).
 
 ## Status
 
-v0.1 scaffold. Skills are stubs.
+v0.1 — skill workflows fully specified. Connector wiring (the `verify-connectors.sh` hook) is intentionally a no-op until a real portco's MCP setup defines what to check.

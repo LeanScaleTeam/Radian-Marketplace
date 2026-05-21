@@ -1,7 +1,7 @@
 {
   "name": "radian-marketplace",
   "owner": {
-    "name": "Chiraag Kapoor",
+    "name": "Chiraag Kapoor (Principal, Radian Capital)",
     "org": "Radian Capital"
   },
   "description": "End-to-end GTM Claude Code plugins for Radian Capital portfolio companies. Lead gen, nurture, conversion, retention, expansion — covering the full funnel + strategic fundamentals + sales ops. Install once, get updates centrally.",
@@ -11,84 +11,84 @@
       "source": "./radian-business-fundamentals",
       "description": "Strategic layer above the funnel — positioning, ICP/market selection, product strategy, narrative, pricing, GTM org design, growth model. Advisory shape, sold to CEOs.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-marketing-ops",
       "source": "./radian-marketing-ops",
       "description": "Cross-channel marketing ops — lead scoring, routing, attribution, real-time enrichment, behavioral triggers, cold-lead re-engagement, lead gen + nurture reporting.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-outbound",
       "source": "./radian-outbound",
       "description": "Outbound motion — list building, personalization, multi-channel cadence, deliverability, reply intent detection.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-sdr",
       "source": "./radian-sdr",
       "description": "Inbound SDR — lead enrichment, personalized outreach, triage, meeting follow-up.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-sales-execution",
       "source": "./radian-sales-execution",
       "description": "Mid-funnel execution — SDR/AE handoff, pre-call prep, on-request enrichment, discovery + objection coaching, multi-threading, post-call + long-term followup, AE/CS handoff.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-deal-desk",
       "source": "./radian-deal-desk",
       "description": "Deal desk — approval checks, contract structuring, rep coaching on payment/billing/discount levers, deal strategy validation.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-crm-hygiene",
       "source": "./radian-crm-hygiene",
       "description": "CRM hygiene plumbing — activity capture, stage accuracy, dedupe, enrichment backlog, account hierarchy. The backbone everything else depends on.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-customer-success",
       "source": "./radian-customer-success",
       "description": "CS operations — kickoff, time-to-value, activation, status visibility, feature adoption, scope management, churn risk, health score calibration, fulfillment reporting.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-revops-cro",
       "source": "./radian-revops-cro",
       "description": "CRO / RevOps view — daily Gong summaries, forecast validation, churn signals, pipeline health.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-expansion",
       "source": "./radian-expansion",
       "description": "Existing-customer growth — renewal management, upsell, cross-sell, references, case studies, referrals, champion job-change play, expansion reporting.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-signals-ci-geo",
       "source": "./radian-signals-ci-geo",
       "description": "AI-native plays — signal-based GTM engine, competitive intelligence, GEO (AI search optimization), content strategy + distribution + pipeline conversion.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     },
     {
       "name": "radian-sales-ops",
       "source": "./radian-sales-ops",
       "description": "Sales ops meta-layer — forecasting, territory design, quota setting, comp design, sales reporting, sales→product/marketing feedback, win/loss, ABS, qualification adherence, coaching at scale, call review.",
       "version": "0.1.0",
-      "author": { "name": "Chiraag Kapoor" }
+      "author": { "name": "Chiraag Kapoor (Principal, Radian Capital)" }
     }
   ]
 }

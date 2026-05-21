@@ -2,7 +2,7 @@
   "name": "radian-signals-ci-geo",
   "version": "0.1.0",
   "description": "AI-native plays — signal-based GTM engine, competitive intelligence, GEO (Generative Engine Optimization), and content strategy for AI search.",
-  "author": "Chiraag Kapoor (Radian Capital)",
+  "author": "Chiraag Kapoor (Principal, Radian Capital)",
   "hooks": {
     "PreToolUse": [
       {

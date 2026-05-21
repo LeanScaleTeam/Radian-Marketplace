@@ -2,7 +2,7 @@
   "name": "radian-expansion",
   "version": "0.1.0",
   "description": "Existing-customer revenue motion — renewal management, upsell, cross-sell, references, case studies, referrals, champion job-change play, expansion reporting.",
-  "author": "Chiraag Kapoor (Radian Capital)",
+  "author": "Chiraag Kapoor (Principal, Radian Capital)",
   "hooks": {
     "PreToolUse": [
       {

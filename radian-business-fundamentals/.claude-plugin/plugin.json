@@ -2,7 +2,7 @@
   "name": "radian-business-fundamentals",
   "version": "0.1.0",
   "description": "Strategic business fundamentals — positioning, ICP/market selection, product strategy, narrative, pricing/packaging, GTM org design, growth model. Advisory layer above the funnel — typically sold to CEOs/founders.",
-  "author": "Chiraag Kapoor (Radian Capital)",
+  "author": "Chiraag Kapoor (Principal, Radian Capital)",
   "hooks": {
     "PreToolUse": [
       {

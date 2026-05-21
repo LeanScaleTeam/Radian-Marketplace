@@ -2,7 +2,7 @@
   "name": "radian-revops-cro",
   "version": "0.1.0",
   "description": "CRO / RevOps workflows — daily Gong summaries, forecast validation, churn signals, pipeline health reporting.",
-  "author": "Chiraag Kapoor (Radian Capital)",
+  "author": "Chiraag Kapoor (Principal, Radian Capital)",
   "hooks": {
     "PreToolUse": [
       {

@@ -79,6 +79,39 @@ payment terms are non-standard but precedented N times; …]
 [What the rep does next — sign, revise, or wait for reviewer]
 ```
 
+## Example output (real-shape, populated)
+
+This is what a rep actually sees in Slack when the skill runs against an Salesforce opp:
+
+```markdown
+**Deal Approval Check — Acme Corp**
+**Recommendation:** ESCALATE
+**Confidence:** Medium
+
+**Proposed terms:**
+- ACV: $42,000
+- Discount: 28% (off list $58,300)
+- Payment terms: net-60
+- Billing: annual
+- Contract length: 12 months
+
+**Reasoning:**
+Discount sits at the 88th percentile of approved SMB deals last 30 days
+(median approved = 14%, P90 = 27%). Net-60 is non-standard but has been
+approved 4 times in this segment in the last quarter — all for similar
+ACV bands. Combined, the 2 non-standard variables push this past the
+auto-approve threshold. Escalating to @chiraag via deal-desk-reviewer
+subagent — request includes call transcript context where rep
+acknowledged competitive pressure from [Competitor X].
+
+**Next step:**
+Wait for deal-desk-reviewer decision (typically <2 hours during business
+hours). If you want to move faster, drop the discount to ≤22% OR change
+payment to net-30 — either single change moves this to auto-approve.
+
+_Logged to audit trail. Reviewer pinged._
+```
+
 ## Connectors used
 
 - Salesforce — opp + approval history (required)

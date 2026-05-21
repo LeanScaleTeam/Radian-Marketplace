@@ -23,9 +23,9 @@ On first skill run, the connector-verify hook will tell you what's missing and w
 
 ## Status
 
-v0.1 scaffold. Skills are stubs — fill in logic before deploying to portfolio companies.
+v0.1 — skill workflows fully specified. Connector wiring (the `verify-connectors.sh` hook) is intentionally a no-op until a real portco's MCP setup defines what to check. The `approval-audit-log.sh` PostToolUse hook writes a durable JSONL audit trail by default.
 
-## Build order recommendation
+## Suggested rollout order at a new portco
 
 1. `deal-approval-check` (highest-value, simplest)
 2. `contract-structurer`
