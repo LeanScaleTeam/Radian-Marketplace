@@ -414,14 +414,3 @@ git push origin main
 /plugin install <plugin>@radian-marketplace
 ```
 
----
-
-## Source
-
-This marketplace is built on a first-principles GTM problem catalog: `ULTIMATE GTM Problems.md` (the source-of-truth document for what's worth automating). Every skill maps to a problem in that catalog — with the original problem statement, industry-validated data, and impacted metrics.
-
-That document is the "why this skill exists" reference. This marketplace is the "how it runs in Claude Code."
-
----
-
-*Built by Chiraag Kapoor (Principal, Radian Capital) for Radian portfolio companies. Open issues / suggest skills via PR.*
