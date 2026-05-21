@@ -122,7 +122,7 @@ To pull updates when Chiraag publishes new versions:
 
 The funnel goes top-to-bottom. The supporting plugins on the side (`crm-hygiene`, `revops-cro`, `sales-ops`) run cross-cutting.
 
-### 🧭 `radian-business-fundamentals` — strategic, advisory layer above the funnel
+### 1) 🧭 `radian-business-fundamentals` — strategic, advisory layer above the funnel
 
 Sold to founders / CEOs. Higher-touch, higher-priced, lower volume. These are prerequisites — if positioning or ICP is broken, funnel SKUs won't compound on top of weak foundations.
 
@@ -138,7 +138,7 @@ Sold to founders / CEOs. Higher-touch, higher-priced, lower volume. These are pr
 
 ---
 
-### 📥 `radian-marketing-ops` — cross-channel lead gen + nurture ops
+### 2) 📥 `radian-marketing-ops` — cross-channel lead gen + nurture ops
 
 The plumbing between lead capture and the SDR motion. Without this, scoring/routing/triggers/nurture all run on garbage.
 
@@ -155,7 +155,7 @@ The plumbing between lead capture and the SDR motion. Without this, scoring/rout
 
 ---
 
-### 📤 `radian-outbound` — outbound sales motion
+### 3) 📤 `radian-outbound` — outbound sales motion
 
 Separate from `radian-sdr` (which handles inbound). Outbound has its own list-building, personalization, multi-channel, deliverability, and reply-handling pain.
 
@@ -173,7 +173,7 @@ Separate from `radian-sdr` (which handles inbound). Outbound has its own list-bu
 
 ---
 
-### 📧 `radian-sdr` — inbound SDR workflows
+### 4) 📧 `radian-sdr` — inbound SDR workflows
 
 The inbound equivalent of `radian-outbound`. Lead lands → enriched → triaged → personalized first-touch drafted → meeting followup.
 
@@ -188,7 +188,7 @@ The inbound equivalent of `radian-outbound`. Lead lands → enriched → triaged
 
 ---
 
-### 🤝 `radian-sales-execution` — mid-funnel conversion
+### 5) 🤝 `radian-sales-execution` — mid-funnel conversion
 
 The execution layer between SDR-qualified meeting and closed-won. Closes the gaps where deals stall, slip, or die.
 
@@ -205,7 +205,7 @@ The execution layer between SDR-qualified meeting and closed-won. Closes the gap
 
 ---
 
-### 💰 `radian-deal-desk` — approval, structuring, rep coaching at the close
+### 6) 💰 `radian-deal-desk` — approval, structuring, rep coaching at the close
 
 Mid-funnel commercial layer. Built for the deal-desk-running RevOps lead.
 
@@ -224,7 +224,7 @@ Mid-funnel commercial layer. Built for the deal-desk-running RevOps lead.
 
 ---
 
-### 🧹 `radian-crm-hygiene` — the operational backbone
+### 7) 🧹 `radian-crm-hygiene` — the operational backbone
 
 The plumbing every other plugin depends on. Garbage CRM = garbage everywhere downstream (reports, forecasts, AI output, segmentation).
 
@@ -241,7 +241,7 @@ The plumbing every other plugin depends on. Garbage CRM = garbage everywhere dow
 
 ---
 
-### 🌱 `radian-customer-success` — onboarding through ongoing through risk
+### 8) 🌱 `radian-customer-success` — onboarding through ongoing through risk
 
 Renewal-protective layer. Covers the 4 phases: kickoff → activation → ongoing delivery → support → health monitoring.
 
@@ -260,7 +260,7 @@ Renewal-protective layer. Covers the 4 phases: kickoff → activation → ongoin
 
 ---
 
-### 📊 `radian-revops-cro` — CRO/RevOps daily view
+### 9) 📊 `radian-revops-cro` — CRO/RevOps daily view
 
 Built for Chiraag specifically — "how I run RevOps" packaged so portfolio CROs get the same daily view.
 
@@ -272,7 +272,7 @@ Built for Chiraag specifically — "how I run RevOps" packaged so portfolio CROs
 
 ---
 
-### 📈 `radian-expansion` — NRR engine
+### 10) 📈 `radian-expansion` — NRR engine
 
 Grow existing accounts + leverage them as a growth channel. Includes the highest-ROI motion in modern B2B sales: **champion job change play**.
 
@@ -290,7 +290,7 @@ Grow existing accounts + leverage them as a growth channel. Includes the highest
 
 ---
 
-### 🛰️ `radian-signals-ci-geo` — AI-native plays
+### 11) 🛰️ `radian-signals-ci-geo` — AI-native plays
 
 Things that didn't exist 18 months ago. Operationalized intent signals + competitive intelligence + AI search optimization (GEO) + content systems.
 
@@ -308,7 +308,7 @@ Things that didn't exist 18 months ago. Operationalized intent signals + competi
 
 ---
 
-### 🧮 `radian-sales-ops` — the meta-layer
+### 12) 🧮 `radian-sales-ops` — the meta-layer
 
 Forecasting, design, comp, reporting, feedback systems, win/loss, ABS, qualification, coaching, library. The systems that surround the sales motion.
 
